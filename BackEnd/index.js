@@ -23,7 +23,7 @@ const Type = require("./models/types");
 
 //Connection to MongoDB
 mongoose
-  .connect(`mongodb+srv://${mongoUser}@${dbHost}:${dbPort}/${database}`, {})
+  .connect(`mongodb+srv://${mongoUser}@${dbHost}/${database}`, {})
   .then(() => {
     console.log("Connected to MongoDB");
   })
