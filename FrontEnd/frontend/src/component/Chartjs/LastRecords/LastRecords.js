@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Currency from "../../Currency";
 import axios from "axios";
 import "./LastRecords.css";
+import { BASE_URL } from "../../../services/AccountServices";
 
 function LastRecords(props) {
   const { transList, startDate, endDate } = props;
@@ -16,8 +17,6 @@ function LastRecords(props) {
       .sort((a, b) => b.dateCreated.timeSince - a.dateCreated.timeSince)
       .slice(0, 5)
   );
-
-  const BASE_URL = "http://localhost:42069/";
 
   useEffect(() => {
     const filteredTransList = transList
