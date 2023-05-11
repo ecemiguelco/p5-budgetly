@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // export const BASE_URL = "http://localhost:42069/";
-export const BASE_URL = "https://budgetmesoftly-v1-api.onrender.com:42069/";
+export const BASE_URL = "https://budgetmesoftly-v1-api.onrender.com/";
 
 export const axiosPostNewAccount = async (props) => {
   try {
