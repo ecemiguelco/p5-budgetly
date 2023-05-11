@@ -13,6 +13,7 @@ const dbHost = process.env.DB_HOST;
 const dbPort = process.env.DB_PORT;
 const port = process.env.PORT;
 const database = process.env.DATABASE;
+const mongoUser = process.env.MONGO_USER;
 
 const User = require("./models/users");
 const Transaction = require("./models/transactions");
@@ -22,7 +23,7 @@ const Type = require("./models/types");
 
 //Connection to MongoDB
 mongoose
-  .connect(`mongodb://${dbHost}:${dbPort}/${database}`, {})
+  .connect(`mongodb+srv://${mongoUser}@${dbHost}/${database}`, {})
   .then(() => {
     console.log("Connected to MongoDB");
   })
