@@ -1,0 +1,60 @@
+.lastRecsListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 0.5rem;
+}
+.recordBoxContainer {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+
+.cateAndAcc,
+.ammountAndDate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.lastRecAccLabel {
+  color: #fff;
+  background-color: #64b5f6;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0.2rem;
+  width: min-content;
+  min-width: 90px;
+  cursor: pointer;
+}
+
+.ammountAndDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.expenseRecord {
+  color: red;
+}
+
+.incomeRecord {
+  color: green;
+}
+
+.incomeRecord,
+.expenseRecord {
+  font-weight: bold;
+}
+
+.lastRecDate {
+  font-size: small;
+}

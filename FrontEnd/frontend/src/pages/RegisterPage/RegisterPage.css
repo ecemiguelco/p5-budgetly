@@ -1,0 +1,35 @@
+.pageContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBoxContainer {
+  padding: 1rem;
+  min-width: 280px;
+  max-width: 50%;
+}
+
+.formContainer {
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+input {
+  padding: 0.6rem;
+}

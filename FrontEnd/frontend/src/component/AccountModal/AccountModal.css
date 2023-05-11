@@ -1,0 +1,98 @@
+.modalAccBackground {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+
+.modalContainerAcc {
+  height: 420px;
+  min-width: 200px;
+  width: 69%;
+  max-width: 420px;
+  background-color: #fff;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modalContainerAcc input {
+  border-radius: 0.25rem;
+}
+
+.modalAccHeaderClose {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accountTypeSelectDropDown {
+  padding: 0.6rem;
+}
+
+.accModalHeaderTitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.accModalCloseBtn {
+  border: none;
+  background: transparent;
+}
+
+.modalAccInputsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.modalAccNameColor,
+.modalAccType,
+.modalAccStartAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.modalAccBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalAccBtn {
+  width: 192px;
+  padding: 0.6rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #00aa70;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modalAccInputsContainer label {
+  font-size: small;
+}
+
+.modalAccInputsContainer input,
+.accountTypeSelectDropDown {
+  border: 1px solid #ccd2db;
+}

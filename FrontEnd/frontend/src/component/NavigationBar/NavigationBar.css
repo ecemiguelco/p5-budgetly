@@ -1,0 +1,98 @@
+.navigationContainer {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  text-align: center;
+  width: 100vw;
+  max-width: 1366px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+}
+
+.mainNavCtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLeft {
+  width: max-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLeft a:active,
+.navLeft a:hover {
+  font-weight: bold;
+}
+
+.navBarLinkers {
+  width: 100px;
+}
+
+.navRight {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navPicContainer {
+  margin-left: auto;
+}
+.userLogOut {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.userLogOut::after {
+  content: "Log Out";
+  position: absolute;
+  top: -25px; /* Adjust the positioning as needed */
+  left: 50%; /* Adjust the positioning as needed */
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  width: max-content;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+.userLogOut:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

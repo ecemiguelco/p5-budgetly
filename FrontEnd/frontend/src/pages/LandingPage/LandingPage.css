@@ -1,0 +1,152 @@
+/* LandingPage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  /* line-height: 1.6; */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--main-color);
+}
+
+.brand-logo,
+.nav-links,
+.auth-buttons {
+  /* flex: 1; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand-logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.auth-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  margin: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Responsive styles */
+
+@media (max-width: 48em) {
+  .nav-links {
+    display: none;
+  }
+
+  .auth-buttons {
+    margin-right: 1em;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 30em) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .auth-button {
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+    width: 100%;
+  }
+}
